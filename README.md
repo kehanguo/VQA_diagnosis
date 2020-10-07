@@ -23,8 +23,20 @@ User story
 - Torch
 http://torch.ch
 
+ 1. install Torch packages:
+  - in a terminal, run the commands WITHOUT sudo
+    > git clone https://github.com/torch/distro.git ~/torch --recursive 
+    cd ~/torch; bash install-deps;
+    ./install.sh
+  - Torch tutorial -- graph style neural networks
+    https://github.com/soumith/cvpr2015/blob/master/NNGraph%20Tutorial.ipynb
+    https://on-demand.gputechconf.com/gtc/2015/webinar/torch7-applied-deep-learning-for-vision-natural-language.mp4
+
 - MSCOCO Dataset
 http://mscoco.org
 
 -Open Access Medical Image repository
 http://www.aylward.org/notes/open-access-medical-image-repositories
+
+- how to create a balanced dataset
+https://arxiv.org/pdf/1612.00837.pdf
