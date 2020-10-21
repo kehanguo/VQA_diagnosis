@@ -19,3 +19,6 @@ volutions interspersed with 5 layers of 2 × 2 max pooling. In this model, the f
 - localization layer: The localization layer accepts a tensor of activations, then internally selects B regions of interests. In this process, three outputs will be generated: Region Coordinates, Region Scores, Region Features.  For each region, the size of feature vector is varying, so the output would go through a bilinear interpolation to sample those features to the same size. So far, the processing of image is completed in this system.
 
 <img width="1008" alt="Screen Shot 2020-10-21 at 10 14 37" src="https://user-images.githubusercontent.com/52185318/96732428-4fc83b80-1386-11eb-9584-91a870f7e3d5.png">
+
+### build the system
+For our own VQA project, we want to duplicate the image processing the same way as the Denscap model do so. So we tried to implement the repo in our own computer, for dataset, we use VisualGenome(https://visualgenome.org/VGViz/explore?query=zebra) as mentioned in the paper. And we are glad that we could produce a result. Here, we also break our traning data into a small dataset for saving computation but it still takes like an hour to train. And the result is shown below:
