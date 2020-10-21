@@ -28,3 +28,50 @@ As we are doing medical image analysis, ideally we could implement this model to
 
 # Image captioning
 This is our step forward to image processing, we wanted to label each region with an captioning. In the Denscap model, and LSTM network is used as solution, but we do not have enough time to implement it for now. So, we chose an easy alternative to understand how image cpationing works. 
+- Algorithm steps:
+
+       Preparation 
+
+Preprocess the images using InceptionV3. 
+
+1  First, converting the images into InceptionV3’s expected format
+
+2 Resizing the image to 299px X 299px
+3 Normalizing the images (pixels from -1 to 1)
+4 Initialize InceptionV3 and load the pretrained Imagenet weights. 
+
+The shape of output layer is 8*8*2048. 
+Caching the features extracted from InceptionV3
+
+We can preprocess each image with InceptionV3 and cache the output to disk. 
+
+
+- Preprocessing
+
+Preprocess and tokenize the captions
+
+1 First, we can tokenize the captions, splitting them into words.(by space)
+
+2 Second, constrain the size of vocabularies to 5000 words (save memory). Replacing all the other words with the token “UNK”
+
+3 Third, we can create word to index and index to word mappings. 
+
+4 Last, padding all sequences to be the same length as the longest one. 
+
+# Split training data and testing data.  
+
+Modeling
+
+Extracting features from lower convolutional layer of InceptionV3 (8,8,2048)
+Squashing it to (64,2048)
+Then passing it to CNN Encoder (Fully connected layers)
+RNN attends over the image to predict the next word. 
+
+
+### Extracted features -> Encoder -> hidden state -> decoder -> prediction - > calculating loss-> using Teacher forcing to decide the next input to the decoder -> calculating the gradients and apply it to the optimizer and backpropagate 
+
+
+<img width="640" alt="Screen Shot 2020-10-21 at 10 50 34" src="https://user-images.githubusercontent.com/52185318/96737225-6ae97a00-138b-11eb-9bc8-631279e10aeb.png">
+<img width="867" alt="Screen Shot 2020-10-21 at 10 50 19" src="https://user-images.githubusercontent.com/52185318/96737238-6f159780-138b-11eb-9a80-ce9241c7f36a.png">
+
+
