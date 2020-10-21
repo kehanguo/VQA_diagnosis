@@ -22,3 +22,9 @@ volutions interspersed with 5 layers of 2 × 2 max pooling. In this model, the f
 
 ### build the system
 For our own VQA project, we want to duplicate the image processing the same way as the Denscap model do so. So we tried to implement the repo in our own computer, for dataset, we use VisualGenome(https://visualgenome.org/VGViz/explore?query=zebra) as mentioned in the paper. And we are glad that we could produce a result. Here, we also break our traning data into a small dataset for saving computation but it still takes like an hour to train. And the result is shown below:
+<img width="494" alt="Screen Shot 2020-10-21 at 10 34 06" src="https://user-images.githubusercontent.com/52185318/96735301-6d4ad480-1389-11eb-93ea-c66d2a9cadcd.png">
+
+As we are doing medical image analysis, ideally we could implement this model to precisely seperate regions properly in a CT scan or sort the unhealthy tissues out among regular groups. This is merely our approach for now, and we also browsed some interesting repo that specifically focused on medical image analysis like NiftyNet that we might do some research later. https://github.com/NifTK/NiftyNet
+
+# Image captioning
+This is our step forward to image processing, we wanted to label each region with an captioning. In the Denscap model, and LSTM network is used as solution, but we do not have enough time to implement it for now. So, we chose an easy alternative to understand how image cpationing works. 
