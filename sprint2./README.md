@@ -76,4 +76,14 @@ RNN attends over the image to predict the next word.
 <img width="640" alt="Screen Shot 2020-10-21 at 10 50 34" src="https://user-images.githubusercontent.com/52185318/96737225-6ae97a00-138b-11eb-9bc8-631279e10aeb.png">
 <img width="867" alt="Screen Shot 2020-10-21 at 10 50 19" src="https://user-images.githubusercontent.com/52185318/96737238-6f159780-138b-11eb-9a80-ce9241c7f36a.png">
 
+## Step forward
+In sprint 3, we will try to do the following:
+- optimaze the performance by enlarging training dataset, this might be done one SCC.
+- connect the result of image processing with a LSTM network to do image captioning.
+
+
+# Reference:
+https://cs.stanford.edu/people/karpathy/densecap.pdf
+https://visualgenome.org/VGViz/explore?query=zebra
+https://github.com/abhshkdz/neural-vqa/blob/master/README.md
 
