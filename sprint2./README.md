@@ -8,3 +8,5 @@ Here we implemented a simple transfer learning model to classify ants and bees. 
 ## Denscap model 
 We are planning to build our project on top of Denscap model build by Standford University. This model implement a fully convolutional localization networks for Dense Captioning (FLCN).
 
+<img width="868" alt="Screen Shot 2020-10-21 at 00 01 56" src="https://user-images.githubusercontent.com/52185318/96671807-b91d5f80-1330-11eb-8c5a-4b0a157dfb8a.png">
+The 
