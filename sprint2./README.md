@@ -16,6 +16,6 @@ volutions interspersed with 5 layers of 2 × 2 max pooling. In this model, the f
 
 <img width="902" alt="Screen Shot 2020-10-21 at 10 05 42" src="https://user-images.githubusercontent.com/52185318/96731976-da5c6b00-1385-11eb-9c5d-5d4c5bfb63d6.png">
 
-- localization layer: The localization layer accepts a tensor of activations, then internally selects B regions of interests.
+- localization layer: The localization layer accepts a tensor of activations, then internally selects B regions of interests. In this process, three outputs will be generated: Region Coordinates, Region Scores, Region Features.  For each region, the size of feature vector is varying, so the output would go through a bilinear interpolation to sample those features to the same size. So far, the processing of image is completed in this system.
 
 <img width="1008" alt="Screen Shot 2020-10-21 at 10 14 37" src="https://user-images.githubusercontent.com/52185318/96732428-4fc83b80-1386-11eb-9584-91a870f7e3d5.png">
