@@ -14,3 +14,6 @@ We will go through this model step by step:
 - VGG16 architecture: VGG-16 is a network that contains 16 layers.It consists of 13 layers of 3 × 3 con-
 volutions interspersed with 5 layers of 2 × 2 max pooling. In this model, the final pooling layer is replaced by a fully convolutional cocalization Layer.
 
+<img width="902" alt="Screen Shot 2020-10-21 at 10 05 42" src="https://user-images.githubusercontent.com/52185318/96731976-da5c6b00-1385-11eb-9c5d-5d4c5bfb63d6.png">
+
+- localization layer
