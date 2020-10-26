@@ -1,6 +1,15 @@
 # Sprint2
 # image processing
 Firstly, we explored several ways to do image processing using machine learning. Here we will demonstrate two major algorithm that we did in this sprint.
+
+<img width="902" alt="Screen Shot 2020-10-21 at 10 05 42" src="https://user-images.githubusercontent.com/52185318/96731976-da5c6b00-1385-11eb-9c5d-5d4c5bfb63d6.png">
+
+- Convolutional layer
+- Pooling layer (downsampling)
+- Fully connected input layer
+- Fully connected layer
+- Fully connected output layer
+
 ##  Image classification
 
 Here we implemented a simple transfer learning model to classify ants and bees. The training set has been properly cut. We have nearly 120 images in total for traning, and 75 images for validation. This test could be run in CPU easily, and takes about 25 minutes overall. The reason we choose to run this model is to better understand how image is processed in convulutional neural network. It is simply a tutorial for us to get familiar with torch. And the result is showed below:
@@ -11,6 +20,8 @@ Here we implemented a simple transfer learning model to classify ants and bees. 
 ## VQA System Architecture
 undefined
 
+
+
 ## Denscap model 
 We are planning to build our project on top of Denscap model developed by Standford University. This model implement a fully convolutional localization networks for Dense Captioning (FLCN).
 
@@ -20,7 +31,6 @@ We will go through this model step by step:
 - VGG16 architecture: VGG-16 is a network that contains 16 layers.It consists of 13 layers of 3 × 3 con-
 volutions interspersed with 5 layers of 2 × 2 max pooling. In this model, the final pooling layer is replaced by a fully convolutional cocalization Layer.
 
-<img width="902" alt="Screen Shot 2020-10-21 at 10 05 42" src="https://user-images.githubusercontent.com/52185318/96731976-da5c6b00-1385-11eb-9c5d-5d4c5bfb63d6.png">
 
 - localization layer: The localization layer accepts a tensor of activations, then internally selects B regions of interests. In this process, three outputs will be generated: Region Coordinates, Region Scores, Region Features.  For each region, the size of feature vector is varying, so the output would go through a bilinear interpolation to sample those features to the same size. So far, the processing of image is completed in this system.
 
