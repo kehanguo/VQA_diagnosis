@@ -7,6 +7,10 @@ Here we implemented a simple transfer learning model to classify ants and bees. 
 
 <img width="1194" alt="Screen Shot 2020-10-19 at 11 20 12" src="https://user-images.githubusercontent.com/52185318/96671515-efa6aa80-132f-11eb-87b8-05d9aa518d0b.png">
 
+
+## VQA System Architecture
+undefined
+
 ## Denscap model 
 We are planning to build our project on top of Denscap model developed by Standford University. This model implement a fully convolutional localization networks for Dense Captioning (FLCN).
 
@@ -79,8 +83,9 @@ RNN attends over the image to predict the next word.
 
 ## Step forward
 In sprint 3, we will try to do the following:
-- optimaze the performance by enlarging training dataset, this might be done one SCC.
+- optimaze the performance by enlarging training dataset, this will be done one GPU.
 - connect the result of image processing with a LSTM network to do image captioning.
+- determine our system architecture
 
 
 # Reference:
