@@ -66,6 +66,8 @@ Emoji Q/A testing result:
 
 ## Next Step
 
+Train images in COCO Dataset.
+
 Combining the saliency map into VQA model.
 
 Expand current dataset
