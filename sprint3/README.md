@@ -56,7 +56,10 @@ contains thousands of 28×28 pixel handwritten digits, like this:
 We have so far etracted feature information from images, we will then conbine them with our questions by going through a LSTM (Long-Short-Term-Memory) model, the LSTM model will then compare the similarity of questions with features and generate answers. Since we only did our tesing in small amount of images, we have no enough features for training a LSTM model. Instead we implmented a sentiment analysis test using Kaggle dataset. In this test, we evaluated emotion setiment using Emoji. This test would be helpful for our future development as our Question related with emotions may occur. 
 
 LSTM structure:
+<img width="604" alt="Screen Shot 2020-11-04 at 11 44 52" src="https://user-images.githubusercontent.com/52185318/98141509-b2e0c480-1e94-11eb-8644-2d22e093afb5.png">
 
+Emoji Q/A testing result:
+     
 
 
 ## Next Step
