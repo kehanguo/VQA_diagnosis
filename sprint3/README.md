@@ -59,9 +59,14 @@ LSTM structure:
 <img width="604" alt="Screen Shot 2020-11-04 at 11 44 52" src="https://user-images.githubusercontent.com/52185318/98141509-b2e0c480-1e94-11eb-8644-2d22e093afb5.png">
 
 Emoji Q/A testing result:
+
+<img width="575" alt="Screen Shot 2020-11-04 at 11 20 08" src="https://user-images.githubusercontent.com/52185318/98141671-defc4580-1e94-11eb-95f1-696d6160336a.png">
      
 
 
 ## Next Step
 
 Combining the saliency map into VQA model.
+
+Expand current dataset
+
