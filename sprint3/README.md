@@ -61,6 +61,10 @@ LSTM structure:
 Emoji Q/A testing result:
 
 <img width="575" alt="Screen Shot 2020-11-04 at 11 20 08" src="https://user-images.githubusercontent.com/52185318/98141671-defc4580-1e94-11eb-95f1-696d6160336a.png">
+
+
+
+
      
 
 
