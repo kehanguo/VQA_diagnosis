@@ -1,5 +1,9 @@
 # Sprint3
 
+![WechatIMG1237](https://user-images.githubusercontent.com/52185318/98573616-0f712480-2285-11eb-83f6-ab4bcd16aba7.png)
+![WechatIMG1239](https://user-images.githubusercontent.com/52185318/98573673-1f890400-2285-11eb-8a30-fa6e38a45595.jpeg)
+
+
 ## Implementing saliency map
 
 a saliency map is an image that shows each pixel‘s unique quality.
