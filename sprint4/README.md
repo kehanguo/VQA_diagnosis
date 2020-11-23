@@ -11,6 +11,7 @@ compact bilinear pooling method that first predicts attention visually and textu
 For the image model, we used ResNet-152 pre-trained on imageNet. For the question model, a 2-layer LSTM model was used.
 
 For our VQA system, we extract image features by using a  two 152-layer residual network,the output is a 2048 image feature vector, and then going to the MCB.It uses two CNNs to extract features from an image and combine the resulting vectors using an outer product, which is fully connected to an output layer,this will allow all elements of both vectors to interact with each other in a multiplicative way to increase accuracy. However, it'll increase the dimensionality to a crazy level. If we took vector n1=n2=2048 and each has 3000 features, they the total parameters would be 2048 * 2048 * 3000, eqaul to 1.25 billions. This would cost huge computation, so in MCB, usually the outer product will be projected to lower dimension to avoid computaion comsumption. 
+
 Similarly, we use a 2-layer LSTM model to get our word features vector of size 2048. Those two vectors are going through anther MCB pooling layer.
 
 <img width="919" alt="MCB" src="https://user-images.githubusercontent.com/52185318/99978173-9dfca000-2d73-11eb-82d4-0c9f87b27bf2.png">
