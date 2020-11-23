@@ -15,6 +15,8 @@ For the image model, we used ResNet-152 pre-trained on imageNet. For the questio
 
 Attention: To incorporate spatial information, we use soft attention on our MCB pooling method. we use MCB pooling to merge the slice of the visual feature with the language representation. As depicted in Figure 3, after the pooling we use two convolu-tional layers to predict the attention weight for each grid location. We apply softmax to produce a nor- malized soft attention map. We then take a weighted sum of the spatial vectors using the attention map to create the attended visual representation.
 
+<img width="826" alt="Screen Shot 2020-11-23 at 12 16 07" src="https://user-images.githubusercontent.com/52185318/99993601-e45afa80-2d85-11eb-859c-1e0b27537726.png">
+
 
 
 
