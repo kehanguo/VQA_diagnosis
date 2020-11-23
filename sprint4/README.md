@@ -36,7 +36,7 @@ The SAN model is a stacked attention model that queries images multiple times to
 
 ## Training output
 Dataset: VQA_Rad dataset
-
+<img width="1057" alt="Screen Shot 2020-11-23 at 10 00 57" src="https://user-images.githubusercontent.com/52185318/99997231-df4c7a00-2d8a-11eb-8d70-0c44bc5bac52.png">
 <img width="874" alt="training_output" src="https://user-images.githubusercontent.com/52185318/99978196-a359ea80-2d73-11eb-8b46-9ec0c381d06d.png">
 
 ## Sprint5
