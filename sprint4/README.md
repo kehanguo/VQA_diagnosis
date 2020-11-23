@@ -6,6 +6,7 @@
 
 
 ## Stacked Attention Networks(SAN)
+<img width="482" alt="SAN" src="https://user-images.githubusercontent.com/52185318/99978471-fcc21980-2d73-11eb-9b41-50c5fb786b68.png">
 
 ## System Architecture
 <img width="928" alt="system_architecture" src="https://user-images.githubusercontent.com/52185318/99978178-9fc66380-2d73-11eb-9b01-644d8843b1be.png">
