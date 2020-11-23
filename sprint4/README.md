@@ -36,3 +36,4 @@ Dataset: VQA_Rad dataset
 <img width="874" alt="training_output" src="https://user-images.githubusercontent.com/52185318/99978196-a359ea80-2d73-11eb-8b46-9ec0c381d06d.png">
 
 ## Sprint5
+we will try to combine our current model with saliency map/ stacked attention network to compare the performance.
