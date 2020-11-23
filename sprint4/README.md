@@ -8,12 +8,15 @@ In sprint3, we examined Saliency map method, in which the brightness of a pixel 
 In this sprint, we build our model on top of Multimodal Compact Billinear Polling(MCB).MCB uses a multimodal
 compact bilinear pooling method that first predicts attention visually and textually then combines these features with question representation. MCB includes three components: a CNN image model, an LSTM question model, and MCB pooling that first predicts the spatial attention and then combines the attention representation with the textual representation to predict the answers.
 
+For the image model, we used ResNet-152 pre-trained on imageNet. For the question model, a 2-layer LSTM model was used.
+
+For our VQA system, we extract image features by using a  two 152-layer residual network,the output is a 2048 image feature vector, and then going to the MCB.It uses two CNNs to extract features from an image and combine the resulting vectors using an outer product, which is fully connected to an output layer,this will allow all elements of both vectors to interact with each other in a multiplicative way to increase accuracy. However, it'll increase the dimensionality to a crazy level. If we took vector n1=n2=2048 and each has 3000 features, they the total parameters would be 2048 * 2048 * 3000, eqaul to 1.25 billions. This would cost huge computation, so in MCB, usually the outer product will be projected to lower dimension to avoid computaion comsumption. 
+Similarly, we use a 2-layer LSTM model to get our word features vector of size 2048. Those two vectors are going through anther MCB pooling layer.
+
 <img width="919" alt="MCB" src="https://user-images.githubusercontent.com/52185318/99978173-9dfca000-2d73-11eb-82d4-0c9f87b27bf2.png">
-
-MCB pooling has been applied to the fine-grained visual recognition task. It uses two CNNs to extract features from an image and combine the resulting vectors using an outer product, which is fully connected to an output layer,this allows all elements of both vectors to interact with each other in a multiplicative way, however, it'll increase the dimensionality to a crazy level. If we took vector n1=n2=2048 and each has 3000 features, they the total parameters would be 2048 * 2048 * 3000, eqaul to 1.25 billions. This would cost huge computation, so in MCB, usually the outer product will be projected to lower dimension to avoid computaion comsumption. 
-For the image model, we used ResNet-152 pre-trained on imageNet. For the question model, a 2-layer LSTM model was used. 
-
 Attention: To incorporate spatial information, we use soft attention on our MCB pooling method. we use MCB pooling to merge the slice of the visual feature with the language representation. As depicted in Figure 3, after the pooling we use two convolu-tional layers to predict the attention weight for each grid location. We apply softmax to produce a nor- malized soft attention map. We then take a weighted sum of the spatial vectors using the attention map to create the attended visual representation.
+
+
 
 <img width="826" alt="Screen Shot 2020-11-23 at 12 16 07" src="https://user-images.githubusercontent.com/52185318/99993601-e45afa80-2d85-11eb-859c-1e0b27537726.png">
 
