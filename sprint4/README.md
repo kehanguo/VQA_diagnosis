@@ -15,7 +15,7 @@ For our VQA system, we extract image features by using a  two 152-layer residual
 Similarly, we use a 2-layer LSTM model to get our word features vector of size 2048. Those two vectors are going through anther MCB pooling layer.
 
 <img width="919" alt="MCB" src="https://user-images.githubusercontent.com/52185318/99978173-9dfca000-2d73-11eb-82d4-0c9f87b27bf2.png">
-Attention: To incorporate spatial information, we use soft attention on our MCB pooling method. we use MCB pooling to merge the slice of the visual feature with the language representation. As depicted in Figure 3, after the pooling we use two convolu-tional layers to predict the attention weight for each grid location. We apply softmax to produce a nor- malized soft attention map. We then take a weighted sum of the spatial vectors using the attention map to create the attended visual representation.
+Attention: To incorporate spatial information, we use soft attention on our MCB pooling method. we use MCB pooling to merge the slice of the visual feature with the language representation. As depicted in Figure 2, after the pooling we use two convolu-tional layers to predict the attention weight for each grid location. We apply softmax to produce a nor- malized soft attention map. We then take a weighted sum of the spatial vectors using the attention map to create the attended visual representation.
 
 
 
