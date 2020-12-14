@@ -18,5 +18,5 @@ Detailed implementations are in the sprint files
 
 ## Final poster
 ![poster team11-2](https://user-images.githubusercontent.com/52185318/102105774-ca995a00-3dfd-11eb-9d1e-09375a370cee.png)
--2.pdf](https://github.com/kehanguo/VQA_diagnosis/files/5690050/poster.team11-2.pdf)
+
 
