@@ -1,6 +1,6 @@
 # VQA_diagnosis
 This is a team project for BU EC601.
-Author: kehan Guo(GKEHAN@bu.edu) Jiaqi Zhang(jiaqiz5@bu.edu)
+Author: Kehan Guo(gkehan@bu.edu) Jiaqi Zhang(jiaqiz5@bu.edu)
 
 ## Product Mission
 - Implement an existed program in Github, and test its result.
@@ -17,4 +17,6 @@ Due to Covid-19, an clinic have thousands samples of CT scans to go through each
 Detailed implementations are in the sprint files
 
 ## Final poster
+![poster team11-2](https://user-images.githubusercontent.com/52185318/102105774-ca995a00-3dfd-11eb-9d1e-09375a370cee.png)
+-2.pdf](https://github.com/kehanguo/VQA_diagnosis/files/5690050/poster.team11-2.pdf)
 
